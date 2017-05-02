@@ -26,7 +26,7 @@ namespace VerifilerTest {
 
 		private readonly string startString;
 
-		public override int ErrorCode { get; set; } = ErrorCode.Custom;
+		public override int ErrorCode { get; set; } = VerifilerCore.Error.Generic;
 
 		public StartsWithStep(string startString) {
 			this.startString = startString;

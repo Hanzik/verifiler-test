@@ -29,8 +29,8 @@ namespace VerifilerTest.Toolbox {
 				logger.Info("Deleting directory " + testFolder);
 				try {
 					Directory.Delete(testFolder, true);
-				} catch (IOException e) {
-					// log this
+				} catch (IOException) {
+					logger.Info("Deleting the testing folder {0}", testFolder);
 				}
 			}
 		}
